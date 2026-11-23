@@ -1,0 +1,12 @@
+server:
+  port: 8080
+  forward-headers-strategy: native
+
+  tomcat:
+    remoteip:
+      internal-proxies: ".*"
+spring:
+  servlet:
+    multipart:
+      max-file-size: 1MB
+      max-request-size: 1MB
